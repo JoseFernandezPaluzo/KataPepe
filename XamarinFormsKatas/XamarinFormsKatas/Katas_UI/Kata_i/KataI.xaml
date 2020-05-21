@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsKatas.Katas_UI.Kata_i.KataI">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Spacing="10">
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="entry1" Placeholder="Texto para mostrar" 
+                       HorizontalOptions="FillAndExpand"
+                       TextChanged="TextChanged"
+                       WidthRequest="45"/>
+                <Entry x:Name="entry2" Placeholder="{Binding TextPlaceholder}" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

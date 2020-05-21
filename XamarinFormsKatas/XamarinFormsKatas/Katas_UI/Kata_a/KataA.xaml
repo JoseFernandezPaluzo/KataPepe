@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinFormsKatas.Katas_UI.Kata_a.KataA">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10">
+                <Label Text="Ejercicios" HorizontalOptions="Center" FontSize="Large"/>
+                <Button x:Name="btKata_B" Text="Kata B"/>
+                <Button x:Name="btKata_C" Text="Kata C"/>
+                <Button x:Name="btKata_D" Text="Kata D y E"/>                
+                <Button x:Name="btKata_F" Text="Kata F"/>
+                <Button x:Name="btKata_G" Text="Kata G"/>
+                <Button x:Name="btKata_H" Text="Kata H"/>
+                <Button x:Name="btKata_I" Text="Kata I"/>
+                <Button x:Name="btKata_J" Text="Kata J"/>
+                <Button x:Name="btKata_K" Text="Kata K"/>
+                <Button x:Name="btKata_L" Text="Kata L"/>
+                <Button x:Name="btKata_M" Text="Kata M"/>
+                <Button x:Name="btKata_N" Text="Kata N"/>
+                <Button x:Name="btKata_O" Text="Kata O"/>
+                <Button x:Name="btKata_P" Text="Kata P"/>
+                <Button x:Name="btKata_Q" Text="Kata Q"/>
+                <Button x:Name="btKata_R" Text="Kata R"/>
+                <Button x:Name="btKata_S" Text="Kata S"/>
+                <Button x:Name="btKata_T" Text="Kata T"/>
+                <Button x:Name="btKata_U" Text="Kata U"/>
+                <Button x:Name="btKata_V" Text="Kata V"/>
+                <Button x:Name="btKata_W" Text="Kata W"/>
+                <Button x:Name="btKata_X" Text="Kata F"/>
+                <Button x:Name="btKata_Y" Text="Kata Y"/>
+                <Button x:Name="btKata_Z" Text="Kata Z"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

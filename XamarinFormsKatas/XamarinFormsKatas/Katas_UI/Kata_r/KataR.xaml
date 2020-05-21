@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsKatas.Katas_UI.Kata_r.KataR">
+    <ContentPage.Content>
+        <ListView x:Name="ShopManageList" ItemsSource="{Binding clpr}">
+            <ListView.Header>
+                <Label Text="Clients and Providers" FontSize="Large" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ScrollView>
+                            <StackLayout Orientation="Horizontal" Spacing="1" Margin="10,10,0,0">
+                                <Label Text=" | Nombre: "/>
+                                <Label Text="{Binding Nombre}" />
+                                <Label Text=" | DNI: "/>
+                                <Label Text="{Binding DNI}"  TextColor="Purple"/>
+                                <Label Text=" | Nombre: "/>
+                                <Label Text="{Binding Nombre}" />
+                                <Label Text=" | Producto: "/>
+                                <Label Text="{Binding Producto}"  TextColor="Purple"/>
+                            </StackLayout>
+                        </ScrollView>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsKatas.Katas_UI.Kata_t.KataT">
+    <ContentPage.Content>
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <Label Text="Puntuación: "
+                VerticalOptions="CenterAndExpand"  FontSize="Large"
+                   Grid.Row="0"/>
+            <Label Text="{Binding Puntuacion}"
+                VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontSize="Large"
+                   Grid.Row="0"/>
+            <Label Text="Nombre: "
+                VerticalOptions="CenterAndExpand"  FontSize="Large"
+                   Grid.Row="1"/>
+            <Label Text="{Binding Nombre}"
+                VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontSize="Large"
+                   Grid.Row="1"/>
+            <Label Text="Deporte: "
+                VerticalOptions="CenterAndExpand"  FontSize="Large"
+                   Grid.Row="2"/>
+            <Label Text="{Binding Deporte}"
+                VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontSize="Large"
+                   Grid.Row="2"/>
+            <Label Text="Edad: "
+                VerticalOptions="CenterAndExpand"  FontSize="Large"
+                   Grid.Row="3"/>
+            <Label Text="{Binding Edad}"
+                VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontSize="Large"
+                   Grid.Row="3"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

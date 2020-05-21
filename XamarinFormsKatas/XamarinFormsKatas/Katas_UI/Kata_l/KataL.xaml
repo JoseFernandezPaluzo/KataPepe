@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsKatas.Katas_UI.Kata_l.KataL">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" >
+            <StackLayout.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Left" Swiped="swipeLeftScreen"/>
+                <SwipeGestureRecognizer Direction="Right" Swiped="swipeRightScreen"/>
+                <SwipeGestureRecognizer Direction="Up" Swiped="swipeUpScreen"/>
+                <SwipeGestureRecognizer Direction="Down" Swiped="swipeDownScreen"/>
+                <TapGestureRecognizer Tapped="tapInScreen"/>
+                <PinchGestureRecognizer PinchUpdated="pinchInScreen"/>
+            </StackLayout.GestureRecognizers>
+            <Label x:Name="labelTextChanged" FontSize="Large"
+                HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                   />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

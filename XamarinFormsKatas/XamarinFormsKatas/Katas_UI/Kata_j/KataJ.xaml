@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:control="clr-namespace:XamarinFormsKatas.Katas_UI.Kata_j.Control"
+             x:Class="XamarinFormsKatas.Katas_UI.Kata_j.KataJ">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label HorizontalOptions="CenterAndExpand" Text="LOGIN" FontSize="Large" Margin="0,10,0,10"/>
+            <StackLayout Orientation="Vertical">
+                <control:CustomEntry x:Name="entryUsername" Placeholder="Username" Text="{Binding Username}"/>
+                <control:CustomEntry x:Name="entryPassword" Placeholder="Password" Text="{Binding Passwd}" />
+                <Button Text="Login" HeightRequest="40" WidthRequest="80" HorizontalOptions="CenterAndExpand"
+                        Command="{Binding LoginIcommand}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

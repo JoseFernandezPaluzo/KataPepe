@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsKatas.Katas_UI.Kata_k.KataK">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="PullRefreshList" IsPullToRefreshEnabled="true">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" Spacing="10" Margin="10,10,0,0">
+                                <Label Text="{Binding Nombre}" />
+                                <Label Text=" | Edad: "/>
+                                <Label Text="{Binding Edad}"  TextColor="Purple"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
